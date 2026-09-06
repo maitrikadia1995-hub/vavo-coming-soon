@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="VAVO — Sow. Grow. Live. Something Green is Growing for You.">
+  <title>VAVO | Coming Soon</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      background: #f7f4ed;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: hidden;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1024px;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    /* Optional clickable social area.
+       Remove this section if you don't want the image to have a social button. */
+    .social {
+      position: absolute;
+      left: 50%;
+      bottom: 2.8%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 14px;
+    }
+
+    .social a {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: rgba(30, 67, 48, 0.94);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+
+    .social a:hover {
+      transform: translateY(-3px);
+      opacity: .88;
+    }
+
+    @media (max-width: 600px) {
+      .social {
+        bottom: 2.4%;
+        gap: 9px;
+      }
+
+      .social a {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+    <!-- Keep vavo-coming-soon.jpg in the same folder as this HTML file -->
+    <img
+      class="hero-image"
+      src="vavo-coming-soon.jpg"
+      alt="VAVO — Coming Soon"
+    >
+
+    <!--
+      OPTIONAL:
+      Replace the # links below with your real social-media URLs.
+      The transparent buttons sit over the social icons already present
+      in your artwork.
+    -->
+    <div class="social" aria-label="VAVO social links">
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="WhatsApp">◔</a>
+    </div>
+  </main>
+
+</body>
+</html>
